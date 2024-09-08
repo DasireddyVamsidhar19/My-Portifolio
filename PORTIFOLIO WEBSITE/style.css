@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition:0.10s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+    0 0 25px orangered;
+    transform: scale(1.1);
+
+
+}
+span{
+    color: orangered;
+
+}
+.navbar a{
+    font-size: 15px;
+    color: antiquewhite;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+   
+}
+
+.contact{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s ease;
+
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orange;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 40px;
+}
+.home-content h1{
+    font-size: 32px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    font-weight: 520;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.download-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    
+}
+.download-button a{
+    color: whitesmoke;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.img-box{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+::-webkit-scrollbar{
+    width: 25px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.618);
+    width: 40px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap:10em;
+    background: black;
+}
+.img-about img{
+    position: relative;
+    width: 400px;
+    box-shadow: 0 0 26px orangered;
+    border-radius: 37%;
+
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 43px;
+}
+.about-content h3{
+    font-size: 36px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+
+}
+/* Projects Section */
+.projects {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.projects .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+    
+}
+
+
+.projects .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.projects .project-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects .project-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project-details {
+    flex: 2;
+    text-align: left;
+    padding: 20px;
+}
+
+.projects .project-details h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.projects .project-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.projects .project-details .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.projects .project-details .project-link:hover {
+    background-color:orangered;
+}
+
+/* Responsive Styling for Projects */
+@media screen and (max-width: 768px) {
+    .projects .project {
+        flex-direction: column;
+    }
+
+    .projects .project-image img {
+        width: 100%;
+    }
+}
+
+/* Experience Section */
+.experience {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.experience .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.experience-item {
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.experience-item h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.experience-item .period {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.experience-item .responsibilities {
+    list-style-type:disc;
+    margin-left: 40px;
+    
+}
+
+.experience-item .responsibilities li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skills .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-box {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-box:hover {
+    background-color:orangered;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .experience-item {
+        padding: 0;
+    }
+}
+
+
+.contact-form {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.contact-me {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Add spacing between buttons */
+}
+
+.whatsapp,.gmail {
+    padding: 15px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2) translate(-10px);
+    background-color:#32a852;
+}
+.gmail:hover{
+    transform: scale(1.2) translate(10px);
+    background-color:red;
+
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        margin-bottom: 20px; /* Add spacing between buttons on mobile */
+    }
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 24px;
+    color: rgb(253,250,250);
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 45%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translate(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-radius: 3px solid transparent;
+    transition: 0.3s ease;
+
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
